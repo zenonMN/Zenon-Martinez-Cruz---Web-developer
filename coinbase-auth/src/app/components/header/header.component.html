@@ -1,0 +1,121 @@
+<div>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">Start Bootstrap</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" (click)="openCoinMarketWidget()">
+            <a class="nav-link">Criptomonedas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!">Calculadora</a>
+          </li>
+          <!-- <li class="nav-item"><a class="nav-link" href="#!">Sign Up</a></li> -->
+          <li *ngIf="!user.id" class="nav-item"><a class="nav-link" href="/login">Log In</a></li>
+          <!-- Profile -->
+          <div *ngIf="user.id" class="dropdown dropdown-profile">
+            <a
+              class="dropdown-link"
+              data-bs-toggle="dropdown"
+              data-display="static"
+            >
+              <div class="avatar avatar-sm icon-nd">
+                <img *ngIf="!user.avatar"
+                  src="../../../assets/img/user.png"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <img *ngIf="user.avatar"
+                  src={{user.avatar}}
+                  class="rounded-circle"
+                  alt=""
+                />
+              </div>
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right tx-13"
+              style="text-align: center"
+            >
+              <div class="avatar avatar-lg mg-b-15">
+                <img *ngIf="!user.avatar"
+                  src="../../../assets/img/user.png"
+                  class="rounded-circle"
+                  alt=""
+                />
+                <img *ngIf="user.avatar"
+                  src={{user.avatar}}
+                  class="rounded-circle"
+                  alt=""
+                />
+              </div>
+              <h6
+                *ngIf="user.name"
+                class="tx-semibold mg-b-5 excluded-weglot"
+                style="word-wrap: break-word"
+              >
+                {{ user.name }}
+              </h6>
+              <!-- <p
+              *ngIf="user"
+              class="mg-b-25 tx-12 tx-color-03 excluded-weglot"
+              style="word-wrap: break-word"
+            >
+              {{ user.email }}
+            </p> -->
+              <a
+                *ngIf="user.id"
+                href="#profile"
+                data-toggle="modal"
+                class="dropdown-item"
+                style="margin-top: 30px"
+              >
+                <i class="icon-edit icon-nd"></i>Profile</a
+              >
+
+              <a
+                href="#"
+                routerLink="/dashboard"
+                class="dropdown-item"
+                translate
+              >
+                <i class="icon-drive icon-nd mg-r-15"></i>Dashboard</a
+              >
+              <a
+                [hidden]="!user"
+                href="#Modalconaccount"
+                data-toggle="modal"
+                class="dropdown-item"
+                translate
+              >
+                <i class="icon-account icon-nd"></i> Account
+              </a>
+              <div class="dropdown-divider"></div>
+              <!-- <a (click)="openUrl('privacy')" class="dropdown-item">
+              <i class="icon-aviso-privacidad icon-nd mg-r-15"></i>{{'Privacy' | translate}}</a>
+            <a (click)="openUrl('terms')" class="dropdown-item"><i class="icon-terminos icon-nd mg-r-15"></i>{{'Terms and Conditions' | translate}}</a> -->
+              <a
+                *ngIf="user.id"
+                (click)="logout()"
+                class="dropdown-item"
+              >
+                <i class="icon-salir icon-nd mg-r-15"></i>Logout</a
+              >
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

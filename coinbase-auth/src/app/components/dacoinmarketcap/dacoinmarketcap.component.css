@@ -1,0 +1,18 @@
+.mini-container{
+    width: auto;
+    height: auto;
+    /*background: red;*/
+    position: fixed;
+    float: right;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(72, 94, 144, 0.16);
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-topright: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}

@@ -1,0 +1,111 @@
+<div class="buy-sell-container">
+  <!-- DataTales Example -->
+  <div class="card shadow mb-4 card-container">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Comprar</h6>
+    </div>
+    <div class="card-body">
+      <div class="buy-row amount-layout mg-b-20">
+        <div class="amount-control">
+          <input
+            type="text"
+            placeholder="0"
+            class="mg-b-20 form-control-lg currency-input"
+          />
+          <button type="button" class="btn btn-outline-secondary">
+            Automatizar compra
+          </button>
+        </div>
+        <div class="amount-icon" style="position: absolute; right: 5rem">
+          <i class="crypto-icon bi-arrow-down-up" style="margin-right: 0px"></i>
+          <span>BTC</span>
+        </div>
+      </div>
+      <div class="buy-row selection-layout">
+        <div
+          class="card-header py-3 transaction-info"
+          data-bs-toggle="modal"
+          data-bs-target="#criptosModal"
+          style="
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 10px 10px 0 0;
+          "
+        >
+          <span class="mg-r-15">Comprar</span>
+          <i class="crypto-icon icon-btc"></i>
+          <span style="font-weight: 500">Bitcoin</span>
+          <i
+            class="bi bi-caret-right"
+            style="position: absolute; right: 30px"
+          ></i>
+        </div>
+        <div
+          class="card-header py-3 mg-b-20 transaction-info"
+          style="
+            border-radius: 0 0 10px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+          "
+        >
+          <span class="mg-r-15">Pagar con</span>
+          <i
+            class="bi-credit-card-2-front mg-r-15"
+            style="font-size: x-large"
+          ></i>
+          <span style="font-weight: 500">Método de pago</span>
+          <i
+            class="bi bi-caret-right"
+            style="position: absolute; right: 30px"
+          ></i>
+        </div>
+        <button type="button" class="btn btn-primary" style="width: 100%">
+          Vista previa de la compra
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card shadow mb-4 card-container">
+    <div class="card-header py-3">
+      <h6 class="m-0 font-weight-bold text-primary">Vender</h6>
+    </div>
+    <div class="card-body"></div>
+  </div>
+</div>
+
+<!-- MODAL -->
+
+<div class="modal" id="criptosModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Seleccione un activo</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div style="overflow-y: scroll; height: 400px">
+          <div *ngFor="let cripto of getCriptos()" class="cripto-card">
+            <div class="cripto-information">
+              <i [attr.class]="getCryptoIcon(cripto)"></i>
+              <div class="cripto-name">
+                <span>{{ getCriptoName(cripto) }}</span>
+                <span>{{ cripto }}</span>
+              </div>
+            </div>
+            <i class="bi bi-check-circle" style="color: blue; display: none;"></i>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Close
+        </button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.container-fluid{
+    display: flex;
+}
+.data-container{
+    padding-top: 4rem;
+}
+.active {
+    background-color: transparent !important;
+}
+
+.price-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+@media (min-width: 1200px) {
+    .col-responsive {
+        width: 15rem;
+    }
+}

@@ -1,0 +1,125 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
+
+body {
+  overflow-x: hidden;
+}
+.mg-b-15 {
+  margin-bottom: 15px;
+}
+a {
+  cursor: pointer;
+}
+.avatar {
+  position: relative;
+  width: 38px;
+  height: 38px;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.crypto-icon {
+  height: 2rem;
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  line-height: 1em;
+  margin-right: 15px;
+}
+
+.account-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 300px;
+}
+
+.account-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.font-weight-bold{
+  font-weight: bold;
+}
+
+.mg-r-15{
+  margin-right: 15px !important;
+}
+
+.mg-t-10{
+  margin-top: 10px;
+}
+
+.mg-b-15{
+  margin-bottom: 15px;
+}
+
+.mg-b-20{
+  margin-bottom: 20px;
+}
+
+.icon-btc {
+  background-image: url(assets/svg/BTC.svg);
+}
+
+.icon-crypto {
+  background-image: url(assets/svg/crypto.png);
+}
+
+.icon-xlm {
+  background-image: url(assets/svg/XLM.svg);
+}
+.icon-grt {
+  background-image: url(assets/svg/GRT.svg);
+}
+.icon-usdc {
+  background-image: url(assets/svg/USDC.svg);
+}
+.icon-ltc {
+  background-image: url(assets/svg/LTC.svg);
+}
+.icon-cro {
+  background-image: url(assets/svg/CRO.svg);
+}
+.icon-eth {
+  background-image: url(assets/svg/ETH.svg);
+}
+.icon-avax {
+  background-image: url(assets/svg/AVAX.svg);
+}
+.icon-doge {
+  background-image: url(assets/svg/DOGE.svg);
+}
+.icon-ada {
+  background-image: url(assets/svg/ADA.svg);
+}
+.icon-fet {
+  background-image: url(assets/svg/FET.svg);
+}
+.icon-shib {
+  background-image: url(assets/svg/SHIB.svg);
+}
+.icon-amp {
+  background-image: url(assets/svg/AMP.svg);
+}
+.icon-bch {
+  background-image: url(assets/svg/BCH.svg);
+}
+.icon-matic {
+  background-image: url(assets/svg/MATIC.svg);
+}
+/*.icon-crypto {
+  background-image: url(assets/svg/crypto.svg);
+}
+.icon-crypto {
+  background-image: url(assets/svg/crypto.svg);
+} */

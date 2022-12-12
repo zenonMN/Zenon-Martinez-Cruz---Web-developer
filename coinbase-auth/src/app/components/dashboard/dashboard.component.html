@@ -1,0 +1,180 @@
+<div id="dashboard-content">
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-responsive px-sm-2 px-0 bg-dark">
+        <div
+          class="
+            d-flex
+            flex-column
+            align-items-center align-items-sm-start
+            px-3
+            pt-2
+            text-white
+            min-vh-100
+          "
+        >
+          <a
+            style="height: 56px"
+            class="
+              d-flex
+              align-items-center
+              pb-3
+              mb-md-0
+              me-md-auto
+              text-white text-decoration-none
+            "
+          >
+          </a>
+          <ul
+            class="
+              nav nav-pills
+              flex-column
+              mb-sm-auto mb-0
+              align-items-center align-items-sm-start
+            "
+            id="menu"
+          >
+            <li class="nav-item">
+              <a
+                class="nav-link align-middle px-0"
+                (click)="chargeDashboard()"
+              >
+                <i class="fs-4 bi bi-easel3"></i>
+                <span class="ml-1 d-none d-sm-inline">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link align-middle px-0"
+                (click)="getAccounts($event)"
+              >
+                <i class="fs-4 bi bi-wallet"></i>
+                <span class="ml-1 d-none d-sm-inline">Cuentas</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link align-middle px-0"
+                (click)="getAddresses($event)"
+              >
+                <i class="fs-4 bi-qr-code"></i>
+                <span class="ml-1 d-none d-sm-inline">Direcciones</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                (click)="getInformationBeforePayOrSell($event)"
+                class="nav-link align-middle px-0"
+              >
+                <i class="fs-4 bi-coin"></i>
+                <span class="ml-1 d-none d-sm-inline">Comprar y vender</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+              
+                class="nav-link align-middle px-0"
+              >
+                <i class="fs-4 bi-cash"></i>
+                <span class="ml-1 d-none d-sm-inline">Depositar y retirar</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+              (click)="getPaymentMethods($event)"
+                class="nav-link align-middle px-0"
+              >
+                <i class="fs-4 bi-credit-card"></i>
+                <span class="ml-1 d-none d-sm-inline">Métodos de pago</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                (click)="getTransactions($event)"
+                class="nav-link align-middle px-0"
+              >
+                <i class="fs-4 bi-currency-dollar"></i>
+                <span class="ml-1 d-none d-sm-inline">Transacciones</span>
+              </a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+      </div>
+      <div class="col py-3">
+        <!-- Content area... -->
+      </div>
+    </div>
+    <!-- Begin Page Content -->
+    <div *ngIf="tab === 0" class="data-container" style="width: inherit;">
+      <!-- Page Heading -->
+      <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+        <a
+          href="#"
+          class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
+          ><i class="fas fa-download fa-sm text-white-50"></i> Generate
+          Report</a
+        >
+      </div>
+
+      <!-- Content Row -->
+      <div class="row">
+        <!-- Earnings (Monthly) Card Example -->
+        <div class="col-xl-3 col-md-6 mb-4" *ngFor="let cripto of prices">
+          <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+              <div class="price-card">
+                <div class="col-auto" style="display: flex; flex-direction: column;">
+                  <i [attr.class] ="getCryptoIcon(cripto)"></i>
+                  <span class="font-weight-bold">{{getCriptoName(cripto)}}</span>
+                  <span class="font-weight-bold">{{cripto}}</span>
+                </div>
+                <div>
+                  <div
+                    class="
+                      text-xs
+                      font-weight-bold
+                      text-success text-uppercase
+                      mb-1
+                    "
+                  >
+                    Compra
+                  </div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">
+                    {{getBuyPrice(cripto)}} USD
+                  </div>
+                  <div
+                    class="
+                      text-xs
+                      font-weight-bold
+                      text-success text-uppercase
+                      mb-1
+                    "
+                  >
+                    Venta
+                  </div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">
+                    {{getSellPrice(cripto)}} USD
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="tab === 1" class="data-container">
+      <app-accounts [accounts]="accounts"></app-accounts>
+    </div>
+    <div *ngIf="tab === 3" class="data-container" style="width: 100%;">
+      <app-buyandsell></app-buyandsell>
+    </div>
+    <div *ngIf="tab === 5" class="data-container">
+      <app-paymentmethods [methods]="paymentMethods"></app-paymentmethods>
+    </div>
+    <div *ngIf="tab === 6" class="data-container" style="width: 100%;">
+      <app-transactions [accounts]="accounts" [transactions]="transactions"></app-transactions>
+    </div>
+  </div>
+</div>

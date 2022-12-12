@@ -1,0 +1,67 @@
+<div>
+  <!-- Collapsable Card Example -->
+  <div class="card shadow mb-4" *ngFor="let account of accounts">
+    <!-- Card Header - Accordion -->
+    <a
+      href="#transactionsList{{account.id}}"
+      class="d-block card-header py-3 card-header-transaction"
+      data-bs-toggle="collapse"
+      role="button"
+      aria-expanded="false"
+      aria-controls="transactionsList"
+      (click)="getTransactions(account.id)"
+    >
+      <span [attr.class]="getCryptoIcon(account.balance.currency)"></span>
+      <h6 class="m-0 font-weight-bold" style="width: 30%;">
+        {{ account.name }}
+      </h6>
+      <span class="mg-r-15" style="width: 30%;color: gray;font-weight: 500;">{{ account.currency }}</span>
+      <span style="width: 10%;"></span>
+      <span class="mg-r-15" style="width: 20%;font-weight: 500;color: gray;"
+        >Saldo: {{ account.balance.amount }}
+        {{ account.balance.currency }}</span
+      >
+    </a>
+    <!-- Card Content - Collapse -->
+    <div class="collapse" id="transactionsList{{account.id}}">
+      <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th></th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let transaction of transactions[account.id]">
+                        <td style="text-align: center;vertical-align: middle;">
+                            <span>{{transaction.createdAt | date:'mediumDate'}}</span>
+                            <span></span>
+                        </td>
+                        <td style="text-align: center;vertical-align: middle;"><i class="bi bi-arrow-left-right"></i></td>
+                        <td >
+                            <div class="td-flex">
+                                <span>{{transaction.details.header}}</span>
+                            <span>Status: {{transaction.status}}</span>
+                            </div>
+                            
+                        </td>
+                        <td>
+                            <div class="td-flex">
+                                <span>{{transaction.amount}}</span>
+                                <span>{{transaction.nativeAmount}}</span>
+                            </div>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

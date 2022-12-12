@@ -1,0 +1,111 @@
+.navbar-custom {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.avatar {
+  position: relative;
+  width: 38px;
+  height: 38px;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+.dropdown-profile .dropdown-link {
+  display: flex;
+  align-items: center;
+}
+.dropdown-profile .dropdown-link:hover .avatar img,
+.dropdown-profile .dropdown-link:focus .avatar img {
+  transform: scale(1.23, 1.23);
+  padding: 3px;
+  background-color: #f5f6fa;
+}
+
+.dropdown-profile .dropdown-menu {
+  border-color: rgba(72, 94, 144, 0.16);
+  width: 230px;
+  padding: 25px;
+  margin-top: 14.5px;
+  box-shadow: none;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.dropdown-profile .dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 25px;
+  border-bottom: 10px solid rgba(72, 94, 144, 0.16);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.dropdown-profile .dropdown-menu::after {
+  content: "";
+  position: absolute;
+  top: -8.5px;
+  left: 26px;
+  border-bottom: 9px solid #fff;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+.dropdown-profile .dropdown-menu.dropdown-menu-right {
+  margin-right: -10px;
+}
+.dropdown-profile .dropdown-menu.dropdown-menu-right::before {
+  left: auto;
+  right: 15px;
+}
+.dropdown-profile .dropdown-menu.dropdown-menu-right::after {
+  left: auto;
+  right: 16px;
+}
+
+.dropdown-profile .dropdown-divider {
+  margin: 15px 0;
+}
+
+.dropdown-profile .dropdown-item {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: #1b2e4b;
+}
+.dropdown-profile .dropdown-item + .dropdown-item {
+  margin-top: 10px;
+}
+.dropdown-profile .dropdown-item svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 15px;
+}
+.dropdown-profile .dropdown-item:hover,
+.dropdown-profile .dropdown-item:focus {
+  background-color: transparent;
+  color: #0168fa;
+}
+.avatar-lg {
+  width: 64px;
+  height: 64px;
+  margin: auto;
+}
+.avatar-lg .avatar-initial {
+  font-size: 24px;
+}
+.avatar-lg.avatar-offline::after,
+.avatar-lg.avatar-online::after {
+  width: 10px;
+  height: 10px;
+  bottom: 3px;
+  right: 4px;
+}
+.navbar-custom {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

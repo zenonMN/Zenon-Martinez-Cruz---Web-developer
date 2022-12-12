@@ -1,0 +1,53 @@
+<div>
+  <!-- Collapsable Card Example -->
+  <div class="card shadow mb-4" *ngFor="let method of methods">
+    <!-- Card Header - Accordion -->
+    <a
+      href="#collapseCardExample"
+      class="d-block card-header py-3"
+      data-bs-toggle="collapse"
+      role="button"
+      aria-expanded="true"
+      aria-controls="collapseCardExample"
+    >
+      <h6 class="m-0 font-weight-bold text-primary">
+        {{method.name}}
+      </h6>
+    </a>
+    <!-- Card Content - Collapse -->
+    <div class="collapse show" id="collapseCardExample">
+      <div class="card-body">
+        <ul>
+            <li>
+                <span style="font-weight: 600;">Allow buy: </span>
+                <span>{{method.allowBuy}}</span>
+            </li>
+            <li>
+                <span style="font-weight: 600;">Allow sell: </span>
+                <span>{{method.allowSell}}</span>
+            </li>
+            <li>
+                <span style="font-weight: 600;">Allow deposit: </span>
+                <span>{{method.allowDeposit}}</span>
+            </li>
+            <li>
+                <span style="font-weight: 600;">Allow withdraw: </span>
+                <span>{{method.allowWithdraw}}</span>
+            </li>
+            <li>
+                <span style="font-weight: 600;">Instant buy: </span>
+                <span>{{method.instantBuy}}</span>
+            </li>
+            <li>
+                <span style="font-weight: 600;">Instant sell: </span>
+                <span>{{method.instantSell}}</span>
+            </li>
+            <li>
+                <span style="font-weight: 600;">Type: </span>
+                <span>{{method.type}}</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

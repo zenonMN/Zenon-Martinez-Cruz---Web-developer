@@ -1,0 +1,51 @@
+<div>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Balance</th>
+                            <th>Type</th>
+                            <!-- <th>Update At</th> -->
+                            <th>Allow deposits</th>
+                            <th>Allow withdrawals</th>
+                        </tr>
+                    </thead>
+                    <!-- <tfoot>
+                        <tr>
+                            <th>Name</th>
+                            <th>Balance</th>
+                            <th>Type</th>
+                            <th>Allow deposits</th>
+                            <th>Allow withdrawals</th>
+                        </tr>
+                    </tfoot> -->
+                    <tbody>
+                        <tr *ngFor="let account of accounts">
+                            <td>
+                                <div class="account-container">
+                                    <span [attr.class] ="getCryptoIcon(account.balance.currency)"></span>
+                                    <div class="account-text">
+                                        <span style="font-weight: 600;">{{account.currency}}</span>
+                                        <span>{{account.balance.currency}}</span>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="font-weight: 500; width: 200px;">{{account.balance.amount}} {{account.balance.currency}}</td>
+                            <td>{{account.type}}</td>
+                            <!-- <td></td> -->
+                            <td>{{account.allowDeposits}}</td>
+                            <td>{{account.allowWithdrawals}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
