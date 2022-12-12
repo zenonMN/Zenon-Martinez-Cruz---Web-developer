@@ -1,0 +1,9 @@
+.user-information{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.basic-information{
+    display: grid;
+}

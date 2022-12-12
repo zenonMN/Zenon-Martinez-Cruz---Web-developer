@@ -1,0 +1,28 @@
+<div class="modal-header">
+  <h4 class="modal-title">Vincular cuenta</h4>
+  <button
+    type="button"
+    class="close"
+    aria-label="Close"
+    (click)="activeModal.dismiss('Cross click')"
+  >
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body grid-centered">
+  <div class="grid-button-container">
+      <a (click)="linkWith('GOOGLE_DRIVE')"><img class="logo" src="assets/logos/google_drive.png"> Google Drive</a>
+      <a (click)="linkWith('DROPBOX')"><img class="logo" src="assets/logos/dropbox.png">Dropbox</a>
+      <a (click)="linkWith('ONEDRIVE')"><img class="logo" src="assets/logos/OneDrive_.png">OndeDrive</a>
+      <a (click)="linkWith('BOX')"><img class="logo" src="assets/logos/box_blue.png">Box</a>
+  </div>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-outline-dark"
+    (click)="activeModal.close('Close click')"
+  >
+    Close
+  </button>
+</div>

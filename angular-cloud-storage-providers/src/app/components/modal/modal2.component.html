@@ -1,0 +1,30 @@
+<div class="modal-header">
+    <h4 class="modal-title">Autorización requerida</h4>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="activeModal.dismiss('Cross click')"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="autorization-btns">
+        <button id="authorizeGoogleBtn" type="button" class="btn btn-primary container-btn" (click)="signIn()">
+            <span class="icon-nd-tool" [ngClass] = "{'icon-google-drive': provider==='GOOGLE_DRIVE', 'icon-dropbox': provider==='DROPBOX', 'icon-onedrive': provider==='ONEDRIVE', 'icon-box': provider==='BOX'}"></span>
+            <span>Autorizar</span>
+        </button>
+        <button id="signOutGoogleBtn" type="button" class="btn btn-secondary" style="margin-top: 12px;" (click)="signOut()">Cerrar sesión</button>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark"
+      (click)="activeModal.close('Close click')"
+    >
+      Close
+    </button>
+  </div>
+  
