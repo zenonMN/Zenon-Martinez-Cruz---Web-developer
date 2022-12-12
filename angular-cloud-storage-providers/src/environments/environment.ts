@@ -6,16 +6,16 @@ export const environment = {
   production: false,
   credentials: {
     google: {
-      api_key: "AIzaSyBUqjlhZAAptNgAFv5pBPLWtrb77wT6JoQ",
-      client_secret: "pv4SyGln8wtXRBjwuSSrlRjJ",
-      client_id: "328373111744-7ur7vphuqs81rakmbvtl1d1quho2puu8.apps.googleusercontent.com",
+      api_key: "api_key",
+      client_secret: "client_secret",
+      client_id: "client_id",
       redirect_uris: ["http://localhost:4200/privacy"],
-      appId : "328373111744"
+      appId : "appId"
     },
     microsoft: {
-      clientId: "216c003b-7ff7-4ed6-9981-1c73add7bb82",
-      tenantId: "28f40336-c9da-4377-9084-a723fb05e12e",
-      clientSecret: "74589865-0a08-467c-90ab-4d8d267d8d5a",
+      clientId: "clientId",
+      tenantId: "tenantId",
+      clientSecret: "clientSecret",
       redirectUri: "",
       scopes: [
         "user.read",
@@ -23,8 +23,8 @@ export const environment = {
       ]
     },
     box: {
-      clientId: "ohl4dllucignkquxj82mrsaun9xk7795",
-      clientSecret: "eEHIFQHNFqpdWorjx9cruriqbyafCcJr",
+      clientId: "clientId",
+      clientSecret: "clientSecret",
       scopes: [
         "user.read",
         "files.readwrite"
