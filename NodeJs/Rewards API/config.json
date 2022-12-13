@@ -1,0 +1,6 @@
+{
+    "endPoint": {
+        "coin": "https://api.minerstat.com/v2/coins",
+        "binancePrice": "https://api.binance.com/api/v3/ticker/price"
+    }
+}

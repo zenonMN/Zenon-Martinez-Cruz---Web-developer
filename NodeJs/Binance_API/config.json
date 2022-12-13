@@ -1,0 +1,21 @@
+{
+    "test": {
+        "baseurl": "https://testnet.binance.vision",
+        "aKey": "",
+        "sKey" : ""
+    },
+    "prod": {
+        "cloudFunction": "https://us-central1-rigdata-ea0f6.cloudfunctions.net/example",
+        "baseurl": "https://api.binance.com",
+        "aKey": "aKey",
+        "sKey" : "sKey"
+    },
+    "endPoint": {
+        "swap": "/sapi/v1/bswap/swap",
+        "withdraw": "/sapi/v1/capital/withdraw/apply"
+    },
+    "swap": {
+        "quoteAsset":"ETH",    
+        "baseAsset": "USDT"  
+    }
+}

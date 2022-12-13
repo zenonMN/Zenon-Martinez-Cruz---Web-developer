@@ -1,0 +1,646 @@
+[
+  {
+    "id": "cd6d91089c7e219a7f4e86e3c2d57f936d367689",
+    "name": "Nvidia RTX 3090Ti",
+    "url": "nvidia-rtx-3090ti",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 270000000,
+        "power": 285
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 121160000,
+        "power": 290
+      },
+      "Ethash4G": {
+        "speed": 128000000,
+        "power": 350
+      },
+      "Ethash": {
+        "speed": 128000000,
+        "power": 350
+      },
+      "KawPow": {
+        "speed": 53000000,
+        "power": 360
+      },
+      "Octopus": {
+        "speed": 122000000,
+        "power": 350
+      },
+      "ProgPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "FiroPoW": {
+        "speed": 53000000,
+        "power": 360
+      }
+    },
+    "specs": {
+      "Release": "January 2022",
+      "Base Clock": "1560 MHz",
+      "Boost Clock": "1860 MHz",
+      "GPU Power": "450 W",
+      "CUDA cores": 10752,
+      "Max Memory Size": "24 GB",
+      "Max Memory Bandwidth": "1008 GB/s",
+      "Memory Type": "GDDR6X"
+    }
+  },
+  {
+    "id": "cae91e45aed80f3a3fe285c3c8c1a7e78d82d473",
+    "name": "Nvidia RTX 3090",
+    "url": "nvidia-rtx-3090",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 260000000,
+        "power": 260
+      },
+      "Cortex": {
+        "speed": 5.3,
+        "power": 270
+      },
+      "EquihashZero": {
+        "speed": 93,
+        "power": 290
+      },
+      "Etchash": {
+        "speed": 121160000,
+        "power": 290
+      },
+      "Ethash4G": {
+        "speed": 119000000,
+        "power": 320
+      },
+      "Ethash": {
+        "speed": 119000000,
+        "power": 320
+      },
+      "KawPow": {
+        "speed": 46500000,
+        "power": 330
+      },
+      "Octopus": {
+        "speed": 94000000,
+        "power": 330
+      },
+      "ProgPow": {
+        "speed": 46000000,
+        "power": 330
+      },
+      "FiroPoW": {
+        "speed": 43000000,
+        "power": 310
+      }
+    },
+    "specs": {
+      "Release": "September 2020",
+      "Base Clock": "1400 MHz",
+      "Boost Clock": "1700 MHz",
+      "Memory Clock": "9750 MHz",
+      "GPU Power": "350 W",
+      "Max temp.": "93°C",
+      "CUDA cores": 10496,
+      "Memory Interface": "384 Bits",
+      "Max Memory Size": "24 GB",
+      "Max Memory Bandwidth": "936 GB/s",
+      "Memory Type": "GDDR6X"
+    }
+  },
+  {
+    "id": "d8502b7d774861547d38343645a9f52b163d08cd",
+    "name": "Nvidia RTX 3080Ti",
+    "url": "nvidia-rtx-3080-ti",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 265000000,
+        "power": 250
+      },
+      "Cortex": {
+        "speed": 5.2,
+        "power": 290
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 86780000,
+        "power": 282
+      },
+      "Ethash4G": {
+        "speed": 117000000,
+        "power": 300
+      },
+      "Ethash": {
+        "speed": 117000000,
+        "power": 300
+      },
+      "KawPow": {
+        "speed": 49000000,
+        "power": 280
+      },
+      "Octopus": {
+        "speed": 85000000,
+        "power": 280
+      },
+      "ProgPow": {
+        "speed": 40000000,
+        "power": 280
+      },
+      "FiroPoW": {
+        "speed": 49000000,
+        "power": 280
+      }
+    },
+    "specs": {
+      "Release": "June 2021",
+      "Base Clock": "1370 MHz",
+      "Boost Clock": "1670 MHz",
+      "GPU Power": "320 W",
+      "Max temp.": "93°C",
+      "CUDA cores": 10240,
+      "Memory Interface": "384 Bits",
+      "Max Memory Size": "12 GB",
+      "Memory Type": "GDDR6X"
+    }
+  },
+  {
+    "id": "584130e068c3f0f36bf0a7ef9308031af8fb6462",
+    "name": "Nvidia RTX 3080",
+    "url": "nvidia-rtx-3080",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 220000000,
+        "power": 220
+      },
+      "Cortex": {
+        "speed": 4.40,
+        "power": 230
+      },
+      "EquihashZero": {
+        "speed": 63,
+        "power": 250
+      },
+      "Etchash": {
+        "speed": 97880000,
+        "power": 224
+      },
+      "Ethash4G": {
+        "speed": 98000000,
+        "power": 240
+      },
+      "Ethash": {
+        "speed": 98000000,
+        "power": 240
+      },
+      "KawPow": {
+        "speed": 39500000,
+        "power": 250
+      },
+      "Octopus": {
+        "speed": 77000000,
+        "power": 250
+      },
+      "ProgPow": {
+        "speed": 38900000,
+        "power": 250
+      },
+      "FiroPoW": {
+        "speed": 41000000,
+        "power": 250
+      }
+    },
+    "specs": {
+      "Release": "September 2020",
+      "Base Clock": "1440 MHz",
+      "Boost Clock": "1710 MHz",
+      "Memory Clock": "9500 MHz",
+      "GPU Power": "320 W",
+      "Max temp.": "93°C",
+      "CUDA cores": 8704,
+      "Memory Interface": "320 Bits",
+      "Max Memory Size": "10 GB",
+      "Memory Type": "GDDR6X"
+    }
+  },
+  {
+    "id": "1407c2b75f43d3691c240e28204533da74ee4054",
+    "name": "Nvidia RTX 3080 LHR",
+    "url": "nvidia-rtx-3080-lhr",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 220000000,
+        "power": 230
+      },
+      "Cortex": {
+        "speed": 4.40,
+        "power": 230
+      },
+      "EquihashZero": {
+        "speed": 63,
+        "power": 250
+      },
+      "Etchash": {
+        "speed": 64880000,
+        "power": 224
+      },
+      "Ethash4G": {
+        "speed": 98000000,
+        "power": 260
+      },
+      "Ethash": {
+        "speed": 98000000,
+        "power": 260
+      },
+      "KawPow": {
+        "speed": 39500000,
+        "power": 250
+      },
+      "Octopus": {
+        "speed": 77000000,
+        "power": 250
+      },
+      "ProgPow": {
+        "speed": 38900000,
+        "power": 250
+      },
+      "FiroPoW": {
+        "speed": 41000000,
+        "power": 250
+      }
+    },
+    "specs": {
+      "Release": 2021,
+      "Base Clock": "1440 MHz",
+      "Boost Clock": "1710 MHz",
+      "Memory Clock": "9500 MHz",
+      "GPU Power": "320 W",
+      "Max temp.": "93°C",
+      "CUDA cores": 8704,
+      "Memory Interface": "320 Bits",
+      "Max Memory Size": "10 GB",
+      "Max Memory Bandwidth": "760 GB/s",
+      "Memory Type": "GDDR6X"
+    }
+  },
+
+  {
+    "id": "1407c2b75f43d3691c240e28204533da74ee4054",
+    "name": "Nvidia RTX 3080 12GB",
+    "url": "nvidia-rtx-3080-12GB",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 165000000,
+        "power": 205
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 102000000,
+        "power": 268
+      },
+      "Ethash4G": {
+        "speed": 101500000,
+        "power": 280
+      },
+      "Ethash": {
+        "speed": 101500000,
+        "power": 280
+      },
+      "KawPow": {
+        "speed": 47000000,
+        "power": 205
+      },
+      "Octopus": {
+        "speed": 70000000,
+        "power": 205
+      },
+      "ProgPow": {
+        "speed": 38900000,
+        "power": 250
+      },
+      "FiroPoW": {
+        "speed": 41000000,
+        "power": 250
+      }
+    },
+    "specs": {
+      "Release": 2021,
+      "Base Clock": "1440 MHz",
+      "Boost Clock": "1710 MHz",
+      "Memory Clock": "9500 MHz",
+      "GPU Power": "320 W",
+      "Max temp.": "93°C",
+      "CUDA cores": 8704,
+      "Memory Interface": "320 Bits",
+      "Max Memory Size": "12 GB",
+      "Max Memory Bandwidth": "760 GB/s",
+      "Memory Type": "GDDR6X"
+    }
+  },
+  {
+    "id": "5d00f2c62873169a8720963189ff86b1f29d4958",
+    "name": "Nvidia RTX A5000",
+    "url": "nvidia-rtx-a5000",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 240000000,
+        "power": 240
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 101500000,
+        "power": 222
+      },
+      "Ethash4G": {
+        "speed": 99000000,
+        "power": 230
+      },
+      "Ethash": {
+        "speed": 99000000,
+        "power": 230
+      },
+      "KawPow": {
+        "speed": 42000000,
+        "power": 240
+      },
+      "Octopus": {
+        "speed": 84500000,
+        "power": 240
+      },
+      "ProgPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "FiroPoW": {
+        "speed": 0,
+        "power": 0
+      }
+    },
+    "specs": {
+      "Release": "May 2021",
+      "GPU Power": "230 W",
+      "GPU cores": 8192,
+      "Max Memory Size": "24 GB",
+      "Max Memory Bandwidth": "768 GB/s",
+      "Memory Type": "GDDR6"
+    }
+  },
+  {
+    "id": "5d00f2c62873169a8720963189ff86b1f29d4958",
+    "name": "Nvidia RTX A4500",
+    "url": "nvidia-rtx-a4500",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 0,
+        "power": 0
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 87000000,
+        "power": 190
+      },
+      "Ethash": {
+        "speed": 87000000,
+        "power": 190
+      },
+      "Ethash4G": {
+        "speed": 0,
+        "power": 0
+      },
+      "KawPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "Octopus": {
+        "speed": 0,
+        "power": 0
+      },
+      "ProgPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "FiroPoW": {
+        "speed": 0,
+        "power": 0
+      }
+    },
+    "specs": {
+      "Release": "Nov 2021",
+      "GPU Power": "200 W",
+      "GPU cores": 7168,
+      "Max Memory Size": "20 GB",
+      "Max Memory Bandwidth": "640 GB/s",
+      "Memory Type": "GDDR6"
+    }
+  },
+  {
+    "id": "3717862a00f88c6164a735d661d4e9c91c5d9767",
+    "name": "Nvidia CMP 170HX",
+    "url": "nvidia-cmp-170hx",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 0,
+        "power": 0
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 161550000,
+        "power": 223
+      },
+      "Ethash": {
+        "speed": 161550000,
+        "power": 223
+      },
+      "Ethash4G": {
+        "speed": 161550000,
+        "power": 223
+      },
+      "KawPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "Octopus": {
+        "speed": 0,
+        "power": 0
+      },
+      "ProgPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "FiroPoW": {
+        "speed": 0,
+        "power": 0
+      }
+    },
+    "specs": {
+      "Release": "Unknown",
+      "Rated Power": "Unknown"
+    }
+  },
+  {
+    "id": "3717862a00f88c6164a735d661d4e9c91c5d9767",
+    "name": "Nvidia CMP 100HX",
+    "url": "nvidia-cmp-100hx",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 0,
+        "power": 0
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 0,
+        "power": 0
+      },
+      "Ethash": {
+        "speed": 81000000,
+        "power": 250
+      },
+      "Ethash4G": {
+        "speed": 81000000,
+        "power": 250
+      },
+      "KawPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "Octopus": {
+        "speed": 0,
+        "power": 0
+      },
+      "ProgPow": {
+        "speed": 0,
+        "power": 0
+      },
+      "FiroPoW": {
+        "speed": 0,
+        "power": 0
+      }
+    },
+    "specs": {
+        "Release": "",
+        "Rated Power": "",
+        "Power connectors": "2x 8-pin",
+        "Memory Size": "6 GB"
+    }
+  },
+  {
+    "id": "dd7c1a3d9d5627da9aea5415e3d07202bfb5925e",
+    "name": "Nvidia CMP 90HX",
+    "url": "nvidia-cmp-90hx",
+    "type": "gpu",
+    "brand": "Nvidia",
+    "algorithms": {
+      "Autolykos": {
+        "speed": 224000000,
+        "power": 250
+      },
+      "Cortex": {
+        "speed": 0,
+        "power": 0
+      },
+      "EquihashZero": {
+        "speed": 0,
+        "power": 0
+      },
+      "Etchash": {
+        "speed": 100000000,
+        "power": 250
+      },
+      "Ethash": {
+        "speed": 100000000,
+        "power": 249
+      },
+      "Ethash4G": {
+        "speed": 100000000,
+        "power": 249
+      },
+      "KawPow": {
+        "speed": 37000000,
+        "power": 320
+      },
+      "Octopus": {
+        "speed": 36000000,
+        "power": 320
+      },
+      "ProgPow": {
+        "speed": 40000000,
+        "power": 320
+      },
+      "FiroPoW": {
+        "speed": 40000000,
+        "power": 250
+      }
+    },
+    "specs": {
+      "Release": "Q2 2021",
+      "Rated Power": "320 W",
+      "Power connectors": "2x 8-pin",
+      "Memory Size": "10 GB"
+    }
+  }
+]

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<info>
+    <name>My tasks</name>
+    <key>Tasks</key>
+    <version>1.0</version>
+    <description>Kanban Syncfusion POC</description>
+    <author>Notdraw</author>
+    <website>notdraw.com</website>
+    <bootstrap>1</bootstrap>
+    <routes>1</routes>
+    <addtomenu>1</addtomenu>
+</info>
